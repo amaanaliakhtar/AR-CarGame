@@ -11,12 +11,13 @@ public class CarController : MonoBehaviour
     private const string HORIZONTAL = "Horizontal";
     private const string VERTICAL = "Vertical";
 
+    private float userInput;
     private float hInput;
     private float vInput;
     private float currentBrakeForce;
     private bool isBraking;
 
-    [SerializeField] private float engineForce = 1000;
+    [SerializeField] private float engineForce = 3000;
     [SerializeField] private float brakeForce = 3000;
 
     private float currentSteerAngle;
@@ -52,11 +53,17 @@ public class CarController : MonoBehaviour
         UpdateVisuals();
     }
 
+    public void UserInput(float input)
+    {
+        vInput = input;
+    }
+
     private void GetInput()
     {
-        hInput = Input.GetAxis(HORIZONTAL);
-        vInput = Input.GetAxis(VERTICAL);
-        isBraking = Input.GetKey(KeyCode.Space);
+
+        //hInput = Input.GetAxis(HORIZONTAL);
+        //vInput = Input.GetAxis(VERTICAL);
+        //isBraking = Input.GetKey(KeyCode.Space);
     }
 
     private void Accelerate()
