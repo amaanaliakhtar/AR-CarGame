@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Specialized;
@@ -5,9 +6,13 @@ using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
-public class CarController : MonoBehaviour
+public class CarController : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
 {
+    GameObject arObject;
+
     private const string HORIZONTAL = "Horizontal";
     private const string VERTICAL = "Vertical";
 
@@ -16,6 +21,10 @@ public class CarController : MonoBehaviour
     private float vInput;
     private float currentBrakeForce;
     private bool isBraking;
+
+    Vector3 move;
+
+    [SerializeField] Button moveButton;
 
     [SerializeField] private float engineForce = 3000;
     [SerializeField] private float brakeForce = 3000;
@@ -36,13 +45,13 @@ public class CarController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        arObject = GameObject.FindGameObjectWithTag("Car");
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void FixedUpdate()  //This method is executed a fixed no. of times per frame
@@ -56,6 +65,8 @@ public class CarController : MonoBehaviour
     public void UserInput(float input)
     {
         vInput = input;
+        UnityEngine.Debug.Log("Button clicked: " + input);
+        FixedUpdate();
     }
 
     private void GetInput()
@@ -66,10 +77,18 @@ public class CarController : MonoBehaviour
         //isBraking = Input.GetKey(KeyCode.Space);
     }
 
+    private void MoveCar()
+    {
+        Accelerate();
+        Steering();
+        UpdateVisuals();
+    }
+
     private void Accelerate()
     {
+        //arObject.transform.Translate(Vector3.forward * 0.5f * Time.deltaTime, Space.World);
         frontLeftCollider.motorTorque = vInput * engineForce;
-        frontRightCollider.motorTorque = vInput* engineForce;
+        frontRightCollider.motorTorque = vInput * engineForce;
 
         if (isBraking)
         {
@@ -113,6 +132,16 @@ public class CarController : MonoBehaviour
         collider.GetWorldPose(out position, out rotation);
         transform.rotation = rotation;
         transform.position = position;
-        
+
+    }
+
+    public void OnPointerUp(PointerEventData eventData)
+    {
+        throw new NotImplementedException();
+    }
+
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        MoveCar();
     }
 }

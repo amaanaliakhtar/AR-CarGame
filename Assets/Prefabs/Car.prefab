@@ -436,10 +436,10 @@ GameObject:
   m_Component:
   - component: {fileID: 3286824914409152175}
   - component: {fileID: 7144952071477985031}
-  - component: {fileID: 7144952071477985030}
+  - component: {fileID: 7482742723267492052}
   m_Layer: 0
   m_Name: Car
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -489,7 +489,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &7144952071477985030
+--- !u!114 &7482742723267492052
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -498,20 +498,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2798694101266105365}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9548270b13d67f3489e0a085dc1693f7, type: 3}
+  m_Script: {fileID: 11500000, guid: eb9cb1f3e79b86c44bc3750e105cffe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  engineForce: 1000
-  brakeForce: 3000
-  maxSteerAngle: 30
-  frontLeftCollider: {fileID: 370566537744419860}
-  frontRightCollider: {fileID: 3730781538743239279}
-  backLeftCollider: {fileID: 6963235806845525403}
-  backRightCollider: {fileID: 668912039443033737}
-  frontLeftTransform: {fileID: 7361902298694186677}
-  frontRightTransform: {fileID: 435644400039914005}
-  backLeftTransform: {fileID: 9068741019917424717}
-  backRightTransform: {fileID: 6723374653236876877}
+  scaleMinValue: 0.2
+  scaleMaxValue: 0.8
+  rotMinValue: 0
+  rotMaxValue: 360
 --- !u!1 &3276215550039599792
 GameObject:
   m_ObjectHideFlags: 0

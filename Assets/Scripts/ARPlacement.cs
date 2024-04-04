@@ -7,7 +7,8 @@ public class ARPlacement : MonoBehaviour
 {
     public GameObject arObjectToSpawn;
     public GameObject placementIndicator;
-    private GameObject spanewdObject;
+    private GameObject spawnedObject;
+    public GameObject uiCanvas;
     public Pose placementPose;
     private ARRaycastManager arRaycastManager;
     private bool placementPoseIsValid = false;
@@ -16,14 +17,16 @@ public class ARPlacement : MonoBehaviour
     void Start()
     {
         arRaycastManager = FindObjectOfType<ARRaycastManager>();
+        uiCanvas.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-    if (spanewdObject == null && placementPoseIsValid && Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began)
+    if (spawnedObject == null && placementPoseIsValid && Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began)
         {
             ARPlaceObject();
+            uiCanvas.SetActive(true);
         }
 
         UpdatePlacementPose();
@@ -32,12 +35,11 @@ public class ARPlacement : MonoBehaviour
 
     void UpdatePlacementIndicator()
     {
-        if (spanewdObject == null && placementPoseIsValid)
+        if (spawnedObject == null && placementPoseIsValid)
         {
             placementIndicator.SetActive(true);
 
-            placementIndicator.transform.SetPositionAndRotation(placementPose.position,
-            placementPose.rotation);
+            placementIndicator.transform.SetPositionAndRotation(placementPose.position, placementPose.rotation);
         }
         else
         {
@@ -61,6 +63,6 @@ public class ARPlacement : MonoBehaviour
 
     void ARPlaceObject()
     {
-        spanewdObject = Instantiate(arObjectToSpawn, placementPose.position, placementPose.rotation);
+        spawnedObject = Instantiate(arObjectToSpawn, placementPose.position, placementPose.rotation);
     }
 }
