@@ -16,18 +16,9 @@ public class ScaleRotateSlider : MonoBehaviour
         scaleSlider.minValue = scaleMinValue;
         scaleSlider.maxValue = scaleMaxValue;
         scaleSlider.onValueChanged.AddListener(ScaleSliderUpdate);
-        //rotateSlider = GameObject.Find("RotateSlider").GetComponent<Slider>();
-        //rotateSlider.minValue = rotMinValue;
-        //rotateSlider.maxValue = rotMaxValue;
-        //rotateSlider.onValueChanged.AddListener(RotateSliderUpdate);
     }
     void ScaleSliderUpdate(float value)
     {
         transform.localScale = new Vector3(value, value, value);
-    }
-    void RotateSliderUpdate(float value)
-    {
-        transform.localEulerAngles = new Vector3(transform.rotation.x, value,
-       transform.rotation.z);
     }
 }

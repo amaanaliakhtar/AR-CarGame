@@ -1399,6 +1399,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arObjectToSpawn: {fileID: 2798694101266105365, guid: 4cdd1026730cb7c43b7c4346092cc9b0, type: 3}
+  arObjectToSpawn2: {fileID: 7450329328149269406, guid: 243b05995a6a0c74b965f94ce93d1a6a, type: 3}
   placementIndicator: {fileID: 1622478226}
   uiCanvas: {fileID: 969033838}
   placementPose:
