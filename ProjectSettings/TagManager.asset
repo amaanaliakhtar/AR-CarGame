@@ -6,6 +6,12 @@ TagManager:
   tags:
   - Car
   - Gem
+  - ScoreDisplay
+  - ScoreboardCanvas
+  - TimerSlider
+  - SliderFill
+  - TimerText
+  - GameOverText
   layers:
   - Default
   - TransparentFX

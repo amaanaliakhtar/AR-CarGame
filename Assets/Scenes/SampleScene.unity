@@ -1379,6 +1379,7 @@ GameObject:
   m_Component:
   - component: {fileID: 782628377}
   - component: {fileID: 782628376}
+  - component: {fileID: 782628378}
   m_Layer: 0
   m_Name: Controller
   m_TagString: Untagged
@@ -1420,6 +1421,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &782628378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 782628375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4f56a39622c0c64f8f7e5984869ae2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameTime: 20
+  normalFillColor:
+    serializedVersion: 2
+    rgba: 4058174
+  warningFillColor:
+    serializedVersion: 2
+    rgba: 3158254
+  warningLimit: 10
+  stopTimer: 0
 --- !u!1 &837026065
 GameObject:
   m_ObjectHideFlags: 0
@@ -1599,6 +1621,9 @@ GameObject:
   - component: {fileID: 969033841}
   - component: {fileID: 969033840}
   - component: {fileID: 969033839}
+  - component: {fileID: 969033843}
+  - component: {fileID: 969033845}
+  - component: {fileID: 969033844}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1690,6 +1715,53 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &969033843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969033838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8167a1c56f5b2614eaf14f0e03fcb70f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gamePad: {fileID: 0}
+  moveSpeed: 0.5
+--- !u!114 &969033844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969033838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4f56a39622c0c64f8f7e5984869ae2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameTime: 20
+  normalFillColor:
+    serializedVersion: 2
+    rgba: 5044302
+  warningFillColor:
+    serializedVersion: 2
+    rgba: 4342527
+  warningLimit: 10
+  stopTimer: 0
+--- !u!114 &969033845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969033838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f993ab573d04ef241a20d92b7e359906, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1030701284
 GameObject:
   m_ObjectHideFlags: 0
