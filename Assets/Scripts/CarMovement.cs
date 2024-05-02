@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 public class CarMovement : MonoBehaviour, IDragHandler, IPointerUpHandler, IPointerDownHandler
 {
     public RectTransform gamePad;
-    public float moveSpeed = 0.5f;
+    public float moveSpeed = 1f;
 
     GameObject arObject;
     Vector3 movement;
