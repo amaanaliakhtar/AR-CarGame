@@ -852,9 +852,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9548270b13d67f3489e0a085dc1693f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  arObject: {fileID: 0}
+  userInput: 0
+  hInput: 0
+  vInput: 0
+  currentBrakeForce: 0
+  isBraking: 0
+  move: {x: 0, y: 0, z: 0}
   moveButton: {fileID: 259715467}
   engineForce: 3000
   brakeForce: 3000
+  currentSteerAngle: 0
   maxSteerAngle: 30
   frontLeftCollider: {fileID: 0}
   frontRightCollider: {fileID: 0}
@@ -1492,13 +1500,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4f56a39622c0c64f8f7e5984869ae2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameTime: 20
+  gameTime: 30
   normalFillColor:
     serializedVersion: 2
     rgba: 4282248254
   warningFillColor:
     serializedVersion: 2
-    rgba: 4281348334
+    rgba: 4281741550
   warningLimit: 10
   stopTimer: 0
 --- !u!1 &837026065

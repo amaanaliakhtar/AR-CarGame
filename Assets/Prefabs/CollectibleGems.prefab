@@ -153,7 +153,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.35, y: 0.4}
+  m_AnchoredPosition: {x: 0.25, y: 0.4}
   m_SizeDelta: {x: 150, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &4707684920391600703
@@ -254,6 +254,7 @@ GameObject:
   - component: {fileID: 4151719250329829800}
   - component: {fileID: 2195832338475087202}
   - component: {fileID: 6310552862467041744}
+  - component: {fileID: 7494150485927096536}
   m_Layer: 0
   m_Name: Gem (5)
   m_TagString: Gem
@@ -348,6 +349,27 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1330367727831327366, guid: 63c482a4bd859c04f8c7f436018dfeca, type: 3}
+--- !u!95 &7494150485927096536
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394581259234366647}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 35132bbfbb2d81e4abed5cb83db56b8d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &547979464494037055
 GameObject:
   m_ObjectHideFlags: 0
@@ -360,6 +382,7 @@ GameObject:
   - component: {fileID: 4287105043521301792}
   - component: {fileID: 2061008275491494378}
   - component: {fileID: 7110319286861688385}
+  - component: {fileID: 3751313699799327093}
   m_Layer: 0
   m_Name: Gem (1)
   m_TagString: Gem
@@ -454,6 +477,27 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1330367727831327366, guid: 63c482a4bd859c04f8c7f436018dfeca, type: 3}
+--- !u!95 &3751313699799327093
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547979464494037055}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 35132bbfbb2d81e4abed5cb83db56b8d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1313103916602499975
 GameObject:
   m_ObjectHideFlags: 0
@@ -601,6 +645,7 @@ GameObject:
   - component: {fileID: 2827544241834561340}
   - component: {fileID: 61224965555420150}
   - component: {fileID: 3912757633482154847}
+  - component: {fileID: 2967263556347781560}
   m_Layer: 0
   m_Name: Gem (6)
   m_TagString: Gem
@@ -695,6 +740,27 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1330367727831327366, guid: 63c482a4bd859c04f8c7f436018dfeca, type: 3}
+--- !u!95 &2967263556347781560
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2006775537590032931}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 35132bbfbb2d81e4abed5cb83db56b8d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2291704408012927629
 GameObject:
   m_ObjectHideFlags: 0
@@ -842,6 +908,7 @@ GameObject:
   - component: {fileID: 1739602825126222816}
   - component: {fileID: 4593874774353702698}
   - component: {fileID: 4454889312377072966}
+  - component: {fileID: 7477110538561691011}
   m_Layer: 0
   m_Name: Gem (2)
   m_TagString: Gem
@@ -936,6 +1003,27 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1330367727831327366, guid: 63c482a4bd859c04f8c7f436018dfeca, type: 3}
+--- !u!95 &7477110538561691011
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2648192123552485119}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 35132bbfbb2d81e4abed5cb83db56b8d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2772694000614842488
 GameObject:
   m_ObjectHideFlags: 0
@@ -1101,6 +1189,7 @@ GameObject:
   - component: {fileID: 380543828910287238}
   - component: {fileID: 2495840617628360012}
   - component: {fileID: 8435400688091746946}
+  - component: {fileID: 5973906911873907701}
   m_Layer: 0
   m_Name: Gem (4)
   m_TagString: Gem
@@ -1195,6 +1284,27 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1330367727831327366, guid: 63c482a4bd859c04f8c7f436018dfeca, type: 3}
+--- !u!95 &5973906911873907701
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4153442150422772889}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 35132bbfbb2d81e4abed5cb83db56b8d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &4724294720354640054
 GameObject:
   m_ObjectHideFlags: 0
@@ -1207,6 +1317,7 @@ GameObject:
   - component: {fileID: 9039879202681304489}
   - component: {fileID: 6525976945657790819}
   - component: {fileID: 3375144768604165579}
+  - component: {fileID: 1757979165450916570}
   m_Layer: 0
   m_Name: Gem
   m_TagString: Gem
@@ -1301,6 +1412,27 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1330367727831327366, guid: 63c482a4bd859c04f8c7f436018dfeca, type: 3}
+--- !u!95 &1757979165450916570
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4724294720354640054}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 35132bbfbb2d81e4abed5cb83db56b8d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &5582414674609197071
 GameObject:
   m_ObjectHideFlags: 0
@@ -1313,6 +1445,7 @@ GameObject:
   - component: {fileID: 8186615756951979280}
   - component: {fileID: 6230805821445239258}
   - component: {fileID: 616287200992638873}
+  - component: {fileID: 6624580275968151740}
   m_Layer: 0
   m_Name: Gem (7)
   m_TagString: Gem
@@ -1407,6 +1540,27 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1330367727831327366, guid: 63c482a4bd859c04f8c7f436018dfeca, type: 3}
+--- !u!95 &6624580275968151740
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5582414674609197071}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 35132bbfbb2d81e4abed5cb83db56b8d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6993281802737461359
 GameObject:
   m_ObjectHideFlags: 0
@@ -1442,7 +1596,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 107.7}
+  m_AnchoredPosition: {x: 0, y: 69.5}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3514946597279322857
@@ -1671,7 +1825,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1687,6 +1841,7 @@ GameObject:
   - component: {fileID: 6315091729550212667}
   - component: {fileID: 8090506938427116273}
   - component: {fileID: 9157634770855697640}
+  - component: {fileID: 1158973737472226183}
   m_Layer: 0
   m_Name: Gem (8)
   m_TagString: Gem
@@ -1781,6 +1936,27 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1330367727831327366, guid: 63c482a4bd859c04f8c7f436018dfeca, type: 3}
+--- !u!95 &1158973737472226183
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7730355375553620772}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 35132bbfbb2d81e4abed5cb83db56b8d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7846337875339771201
 GameObject:
   m_ObjectHideFlags: 0
@@ -1793,6 +1969,7 @@ GameObject:
   - component: {fileID: 5766790603571374174}
   - component: {fileID: 8638808750934613140}
   - component: {fileID: 301602563008621260}
+  - component: {fileID: 1383178936538054960}
   m_Layer: 0
   m_Name: Gem (3)
   m_TagString: Gem
@@ -1887,6 +2064,27 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1330367727831327366, guid: 63c482a4bd859c04f8c7f436018dfeca, type: 3}
+--- !u!95 &1383178936538054960
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7846337875339771201}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 35132bbfbb2d81e4abed5cb83db56b8d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7942407870155031417
 GameObject:
   m_ObjectHideFlags: 0
